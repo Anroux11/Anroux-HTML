@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI';
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 2px grey;
+    padding: 0 0;
+    z-index: 100px
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 35px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: lightseagreen;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transition-duration: 0.3s;
+}
+
+main {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+section {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(202, 197, 197);
+}
+
+#about div {
+    flex: 1;
+    min-width: 300px;
+}
+
+#about img {
+    width: 100%;
+    max-width: 350px;
+    margin: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px grey;
+}
+
+.image:hover {
+    transform: scale(102%);
+}
+
+#about article {
+    flex: 2;
+    min-width: 300px;
+}
+
+h2 {
+    font-size: 35px;
+    color: #3e556e;
+    border-bottom: 2px solid grey;
+    padding-bottom: 0.5px;
+    display: inline-block;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#skills {
+    padding: 40px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-top: 35px;;
+}
+
+#skills li {
+    background-color: lightseagreen;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 15px black;
+    margin-bottom: 35px;
+}
+
+#skills li:hover {
+    transform:scale(90%)
+}
+
+#projects > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#projects article {
+    background-color: #bcc8d4;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px lightgray;
+    transform:scale(110%);
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin-left: 10px;
+}
+
+p {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+#projects a {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #2c3e50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500px;
+    font-size: 16px;
+}
+
+#projects a:hover {
+    background-color:lightseagreen;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+#contact form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px 10px lightblue;
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+#contact form div {
+    margin-bottom: 1.5rem;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+#contact input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#contact textarea {
+    min-height: 130px;
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#contact button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#contact button:hover {
+    background-color: lightseagreen;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 20px;
+}
+
+footer div {
+    margin-bottom:1.5rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding-top: 10px;
+    font-weight: 500;
+    transition: color 0.2s;
+}

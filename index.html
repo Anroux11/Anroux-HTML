@@ -1,60 +1,99 @@
 <!DOCTYPE html>
-<head>
 <html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
     <title>Anroux - Portfolio</title>
-</html>
+
 </head>
 
 <body>
-    <h1 id="home">Anroux Bezuidenhout</h1>
-    <ul>
-        <li><a href="#home">Home<a></li> 
-        <li><a href="#about">About</a></li> 
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>  
-        <li><a href="#contact">Contacts</a></li>  
-    </ul>
-    <image src="https://tshepo1103-lab.github.io/html-portfolio-assessment/public/img/test.jpeg" alt="friendly picture"/>
-    <h2 id="about">About Me</h2>
-        <p>Web developer with expertise in HTML, CSS, and JavaScript. Passionate about creating responsive and user-friendly websites.
-Skills</p>
-    <h2 id="skills">Skills</h2>
+    <header>
+        <div class="container">
+            <h1>Anroux Bezuidenhout</h1>
+            <nav>
+            <ul class="list">
+                <li><a href="#home">Home<a></li> 
+                <li><a href="#about2">About</a></li> 
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>  
+                <li><a href="#contact">Contacts</a></li>  
+            </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section id="about">
+            <div>
+                <image class="image" src="https://tshepo1103-lab.github.io/html-portfolio-assessment/public/img/test.jpeg" alt="friendly picture"/>
+            </div>
+            <article>
+                <h2 id="about2">About Me</h2>
+                <p>Web developer with expertise in HTML, CSS, and JavaScript. Passionate about creating responsive and user-friendly websites. I like the outdoors and to be active. It is importent for me to always spend time with family and friends.</p>
+            </article>
+        </section>
+    
+        <section id="skills">
+            <h2>Skills</h2>
         <ul>
             <li>HTML5</li>
             <li>CSS3</li>
             <li>JavaScript</li>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>React</li>
+            <li>Bootstrap</li>
         </ul>
-    <h2 id="projects">Projects</h2>
-    <h3>Personal Blog</h3>
-        <p>A responsive blog built with HTML and deployed on GitHub Pages.</p>
-        <a href="https://tshepo1103-lab.github.io/html-portfolio-assessment/#">View Project</a>
+        </section>
+    
+        <section id="projects">
+            <h2>Projects</h2>
+            <div>
+                <article>
+                    <h3>Personal Blog</h3>
+                    <p>A responsive blog built with HTML and deployed on GitHub Pages.</p>
+                    <a href="https://tshepo1103-lab.github.io/html-portfolio-assessment/">View Blog</a>
+                </article>
+                <article>
+                    <h3>Portfolio Site</h3>
+                    <p>A personal portfolio showcasing my web development projects.</p>
+                    <a href="https://tshepo1103-lab.github.io/html-portfolio-assessment/">View Site</a>
+                </article>
+                <article>
+                    <h3>Weather App</h3>
+                    <p>A weather App that displayes real time weather data from all over the world.</p>
+                    <a href="https://tshepo1103-lab.github.io/html-portfolio-assessment/">View App</a>
+                </article>
+            </div>
+        </section>
 
-    <h3>Portifolio site</h3>
-    <p>A personal portfolio showcasing my web development projects.</p>
-    <a href="https://tshepo1103-lab.github.io/html-portfolio-assessment/#">View Project</a>
-
-    <h3 id="contact">Contact Me</h3>
-
-    <label for="name">Name</label>
-    <input type="text" id="text" value="Your name">
-    <br>
-
-    <label for="Emai">Email</label>
-    <input type="text" id="text" value="your.email@example.com">
-    <br>
-
-    <label for="message">Message</label>
-    <textarea  type="text" col="1" row="2" value="your message"></textarea>
-    <br>
-
-    <input type="submit" value="submit"/>
-    <br>
-    <a href="https://github.com/johndoe">GitHub</a>
-    <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
-    <a href="https://twitter.com/johndoe">Twitter</a>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit-form" method="POST">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name"value="Your name" required>
+            </div>
+            <div>
+                <label for="Emai">Email</label>
+                <input type="email" id="email" name="email" value="your.email@example.com" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" col="1" row="2" value="Your message" required>Your Message</textarea>
+            </div>
+            <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
 
     <footer>
-        <p>© 2024 Anroux John Doe. All rights reserved</p>
+        <div>
+            <a href="https://github.com/johndoe">GitHub</a>
+            <a href="https://linkedin.com/in/johndoe">LinkedIn</a>
+            <a href="https://twitter.com/johndoe">Twitter</a>
+            <p>© 2024 Anroux Bezuidenhout. All rights reserved</p>
+        </div>
     </footer>
-
 </body>
+</html>
