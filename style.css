@@ -62,7 +62,7 @@ main {
     padding: 0 20px;
 }
 
-#about {
+#about-me {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -74,12 +74,12 @@ section {
     border-bottom: 1px solid #e9ecef;
 }
 
-#about div {
+#about-me div {
     flex: 1;
     min-width: 300px;
 }
 
-#about img {
+#about-me img {
     width: 100%;
     max-width: 350px;
     height: auto;
@@ -88,7 +88,7 @@ section {
     transition: transform 0.3s ease;
 }
 
-#about article {
+#about-me article {
     flex: 2;
     min-width: 300px;
 }
@@ -105,13 +105,13 @@ p {
     margin-bottom: 1rem;
 }
 
-#skills {
+#my-skills {
     padding: 40px 0;
     justify-content: center;
     align-items: center;
 }
 
-#skills ul {
+#my-skills ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
@@ -119,7 +119,7 @@ p {
     margin-top: 1rem;
 }
 
-#skills li {
+#my-skills li {
     background-color: #3498db;
     color: white;
     padding: 1rem 1rem;
@@ -129,19 +129,19 @@ p {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#skills li:hover {
+#my-skills li:hover {
     transform: translateY(-3px);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
-#projects > div {
+#my-projects > div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-#projects article {
+#my-projects article {
     background-color: white;
     border-radius: 10px;
     padding: 1.5rem;
@@ -149,7 +149,7 @@ p {
     transition: tansform 0.3s, box-shadow 0.3s;
 }
 
-#projects article:hover {
+#my-projects article:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
@@ -163,7 +163,7 @@ p {
     margin-bottom: 1rem;
 }
 
-#projects a {
+#my-projects a {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.6rem 1.2rem;
@@ -175,7 +175,7 @@ p {
     transition: background-color 0.3s;
 }
 
-#projects a:hover {
+#my-projects a:hover {
     background-color: #3498db;
 }
 
@@ -184,7 +184,7 @@ section:last-child {
     border-bottom: none;
 }
 
-#contact form {
+#contact-me form {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -193,19 +193,19 @@ section:last-child {
     margin: 2rem auto 0;
 }
 
-#contact form div {
+#contact-me form div {
     margin-bottom: 1.5rem;
 }
 
-#contact label {
+#contact-me label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
     color: #2c3e50;
 }
 
-#contact input,
-#contact textarea {
+#contact-me input,
+#contact-me textarea {
     width: 100%;
     padding: 0.8rem;
     border: 1px solid #ddd;
@@ -215,19 +215,19 @@ section:last-child {
     transition: border-color 0.3s;
 }
 
-#contact input:focus,
-#contact textarea:focus {
+#contact-me input:focus,
+#contact-me textarea:focus {
     outline: none;
     border-color: #3498db;
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
 }
 
-#contact textarea {
+#contact-me textarea {
     min-height: 120px;
     resize: vertical;
 }
 
-#contact button {
+#contact-me button {
     background-color: #3498db;
     color: white;
     border: none;
@@ -239,7 +239,7 @@ section:last-child {
     transition: background-color 0.3s;
 }
 
-#contact button:hover {
+#contact-me button:hover {
     background-color:#2980b9;
 }
 
@@ -282,17 +282,17 @@ footer p {
         margin: 0.5rem 0;
     }
 
-    #about {
+    #about-me {
         flex-direction: column;
         justify-content: center;
     }
 
-    #about div {
+    #about-me div {
         display: flex;
         justify-content: center;
     }
 
-    #skills ul {
+    #my-skills ul {
         justify-content: center;
     }
 
